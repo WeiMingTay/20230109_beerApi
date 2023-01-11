@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Aufgabenstellung
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Heute erstellen wir eine Homepage zum Thema Bier mit Hilfe einer API
 
-## Available Scripts
+Nutze diese API!
 
-In the project directory, you can run:
 
-### `npm start`
+Hinweis
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Nutze console.log, um dir den Aufbau der API anzuzeigen.
+Figma Link: https://www.figma.com/file/3vXkjBNmgJVpSz2HaCprE6/Beer-Api?node-id=0%3A1
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Erstelle die Grundstruktur deiner Homepage:
 
-### `npm test`
+Alle Biere
+Zufälliges Bier
+![Alt text](public/assets/img/Screenshot%202023-01-09%20223817.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Erstelle eine Navbar, die immer angezeigt wird, wenn du nicht auf der Startseite bist. Diese führt zurück zur Startseite.
+![Alt text](public/assets/img/Screenshot%202023-01-09%20223859.png)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Liste die Biere auf. Es sollte enthalten sein:
+Bild
+Name 
+Slogan (tagline)
+Produzent (contributed_by)
+Erstelle zusätzlich einen Link, der zu der Detailseite des Bieres führt!
+Der Link sollte z.B. zu /beers/:beerId führen
+Hinweis
+Du kannst die API auch mit
+beers/bierID anrufen! z.B.: https://ih-beers-api2.herokuapp.com/beers/5fb6a86265b9c209606e10e0
+![Alt text](public/assets/img/Screenshot%202023-01-09%20223934.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Erstelle die Bier-Detailansicht, hier sollte
+das Bild
+der Name
+der Slogan (tagline)
+wann es das erste Mal gebraut wurde (first_brewed)
+das attenuation_level
+die Beschreibung
+der Produzent (contributed_by)
+angezeigt werden. 
+![Alt text](public/assets/img/Screenshot%202023-01-09%20223958.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Erstelle die “zufälliges Bier”-Seite
+Nutze hier den random-Endpunkt der API 
+Der Aufbau der Seite ist wie die Detailansicht
 
-### `npm run eject`
+![Alt text](public/assets/img/Screenshot%202023-01-09%20224025.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Mein Ergebnis
+![Alt text](public/assets/img/001.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Alt text](public/assets/img/002.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Alt text](public/assets/img/003.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Alt text](public/assets/img/004.png)
+![Alt text](public/assets/img/005.png)

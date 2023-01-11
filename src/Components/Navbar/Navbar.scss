@@ -1,0 +1,27 @@
+nav {
+	$primaryColour: #ffca41;
+	background-color: $primaryColour;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	display: grid;
+	place-content: center;
+	height: 5rem;
+	a {
+		cursor: pointer;
+		aspect-ratio: 1/1;
+		border-radius: 50%;
+		overflow: hidden;
+		margin: 0.5rem;
+		img {
+			width: 50px;
+			height: 100%;
+            transition: all 250ms;
+		}
+		&:hover {
+			img {
+				scale: 1.2;
+			}
+		}
+	}
+}

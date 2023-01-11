@@ -1,0 +1,6 @@
+.bierAuswahl {
+	height: calc(100vh - 5rem);
+	scroll-behavior: smooth;
+	display: grid;
+	grid-template-rows: repeat(3, 1fr);
+}

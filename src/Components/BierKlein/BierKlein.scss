@@ -1,0 +1,71 @@
+.bierKlein {
+	$primaryColour: #ffca41;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+
+	background-color: transparent;
+	position: relative;
+
+	&::after {
+		content: "";
+		position: absolute;
+		width: 90%;
+		border-bottom: 2px solid $primaryColour;
+		bottom: 0;
+		left: 50%;
+		transform: translatex(-50%);
+	}
+
+	> div {
+		&:first-of-type {
+			padding: 1rem;
+			height: 30vh;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			img {
+				height: 100%;
+				/* width: 100%; */
+				object-fit: fill;
+				transition: all 500ms;
+			}
+			/* &:hover img {
+				scale: .9;
+			} */
+		}
+		&:last-of-type {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			padding-right: 1rem;
+			
+
+			> div {
+				display: flex;
+				flex-direction: column;
+
+				h3 {
+					font-size: 1.5rem;
+				}
+				p {
+					color: $primaryColour;
+					font-weight: 700;
+				}
+			}
+			a {
+				background-color: $primaryColour;
+				color: #fff;
+				font-size: 1.1rem;
+				padding: 0.1rem 1rem;
+				border-radius: 2rem;
+				text-decoration: none;
+				font-weight: 700;
+				width: max-content;
+				&:hover {
+					scale: 1.1;
+				}
+			}
+		}
+	}
+}

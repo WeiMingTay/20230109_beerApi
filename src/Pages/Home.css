@@ -1,0 +1,46 @@
+.home {
+  height: 100vh;
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: repeat(2, 1fr);
+  padding: 2rem 1rem;
+}
+.home > a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+}
+.home > a div:first-of-type {
+  height: 225px;
+  overflow: hidden;
+}
+.home > a div:first-of-type img {
+  width: 100%;
+  height: 100%;
+  transition: all 250ms;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home > a div:last-of-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: calc(100% - 225px);
+  gap: 1rem;
+}
+.home > a div:last-of-type h2 {
+  background-color: #ffca41;
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  transition: all 250ms;
+}
+.home > a div:last-of-type p {
+  font-size: 1.2rem;
+}
+.home > a:hover img {
+  scale: 1.1;
+}
+.home > a:hover h2 {
+  transform: translateY(-50%);
+}/*# sourceMappingURL=Home.css.map */
