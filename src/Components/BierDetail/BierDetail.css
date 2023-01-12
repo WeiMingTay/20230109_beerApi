@@ -6,8 +6,11 @@
   padding: 0.5rem 2rem;
 }
 .bierDetail > div > div:first-of-type {
-  display: grid;
-  place-items: center;
+  /* 	display: grid;
+  place-items: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 45%;
   width: 100vw;
   transition: all 500ms;
@@ -29,11 +32,11 @@
 .bierDetail > div > div:last-of-type {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   height: 55%;
 }
 .bierDetail > div > div:last-of-type h3 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 600;
 }
 .bierDetail > div > div:last-of-type > p:first-of-type {
@@ -66,15 +69,24 @@
   background-color: #ffca41;
   transition: color 500ms, scale 250ms;
   /* 
-  					&:hover::after {
-  						content: "";
-  						border-bottom: 3px solid #fff;
-  						position: absolute;
-  						width: 6%;
-  						transform: translate(25%, -15%);
-  					} */
+  &:hover::after {
+  	content: "";
+  	border-bottom: 3px solid #fff;
+  	position: absolute;
+  	width: 6%;
+  	transform: translate(25%, -15%);
+  } */
 }
 .bierDetail > div > div:last-of-type a:hover {
   scale: 0.75;
   color: #ffca41;
+}
+
+@media (min-width: 1000px) {
+  .bierDetail > div {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+  }
 }/*# sourceMappingURL=BierDetail.css.map */

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+
 import Navbar from "../Components/Navbar/Navbar";
 
 import "./../Components/BierDetail/BierDetail.css";
@@ -37,9 +37,9 @@ const BierRandom = () => {
 						</p>
 					</div>
 					<p>{bier.description}</p>
-					<Link to="/">
+					{/* 	<Link to="/">
 						<i class="las la-angle-left"></i>
-					</Link>
+					</Link> */}
 				</div>
 			</div>
 			<Navbar />
