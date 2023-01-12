@@ -67,14 +67,20 @@
 					border-radius: 50%;
 					aspect-ratio: 1/1;
 					background-color: $primaryColour;
-
+					transition: color 500ms, scale 250ms;
+					
+					&:hover {
+						scale: .75;
+				color: $primaryColour;
+					}
+/* 
 					&:hover::after {
 						content: "";
 						border-bottom: 3px solid #fff;
 						position: absolute;
 						width: 6%;
 						transform: translate(25%, -15%);
-					}
+					} */
 				}
 			}
 		}

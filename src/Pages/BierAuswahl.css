@@ -3,4 +3,21 @@
   scroll-behavior: smooth;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
+  transition: all 250ms;
+}
+
+@media (min-width: 1000px) {
+  .bierAuswahl {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  .bierAuswahl:hover article:hover {
+    scale: 1.1;
+  }
+  .bierAuswahl:hover article:hover::after {
+    border: none;
+  }
+  .bierAuswahl:hover article:not(:hover) {
+    filter: blur(5px);
+  }
 }/*# sourceMappingURL=BierAuswahl.css.map */

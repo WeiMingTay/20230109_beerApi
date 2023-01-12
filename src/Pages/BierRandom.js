@@ -37,7 +37,7 @@ const BierRandom = () => {
 						</p>
 					</div>
 					<p>{bier.description}</p>
-					<Link to="/biere">
+					<Link to="/">
 						<i class="las la-angle-left"></i>
 					</Link>
 				</div>
