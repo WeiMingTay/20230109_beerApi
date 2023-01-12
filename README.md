@@ -58,3 +58,5 @@ Der Aufbau der Seite ist wie die Detailansicht
 
 ![Alt text](public/assets/img/004.png)
 ![Alt text](public/assets/img/005.png)
+
+![Alt text](public/assets/img/006.png)
