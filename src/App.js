@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { useEffect, useState } from "react";
 import "./App.css";
 import BierDetail from "./Components/BierDetail/BierDetail";
 
