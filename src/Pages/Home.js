@@ -5,7 +5,7 @@ const Home = () => {
 		<section className="home">
 			<Link to="/biere">
 				<div>
-					<img src="assets/img/christin-hume-08tX2fsuSLg-unsplash.png" />
+					<img src="assets/img/christin-hume-08tX2fsuSLg-unsplash.png" alt="Auswahl"/>
 				</div>
 				<div>
 					<h2>Bierauswahl</h2>
@@ -17,7 +17,7 @@ const Home = () => {
 			</Link>
 			<Link to="/random">
 				<div>
-					<img src="assets/img/proriat-hospitality-flENqflm6xU-unsplash.png" />
+					<img src="assets/img/proriat-hospitality-flENqflm6xU-unsplash.png" alt="Zufall"/>
 				</div>
 				<div>
 					<h2>Zufallsauswahl</h2>

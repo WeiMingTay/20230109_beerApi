@@ -15,7 +15,7 @@ const BierRandom = () => {
 			.then((data) => {
 				setBier(data);
 			});
-	}, []);
+	});
 
 	return (
 		<section className="bierDetail">

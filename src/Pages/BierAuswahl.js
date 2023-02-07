@@ -16,7 +16,7 @@ const BierAuswahl = () => {
 			.then((data) => {
 				setBier(data);
 			});
-	}, []);
+	});
 
 	return (
 		<section className="bierAuswahl">
